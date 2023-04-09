@@ -14,9 +14,14 @@ canvas {
 
 #overlay {
   position: fixed;
-  top:50vh;
-  right: 20vw;
+  top:70vh;
+  right: 10vw;
   z-index: 1;
   background-color: transparent;
   padding: 10px;
+}
+
+#overlay:hover {
+
+  filter: hue-rotate(140deg);
 }
