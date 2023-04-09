@@ -1,6 +1,6 @@
 let font1;
 
-let cylinderRadius = 220;
+let cylinderRadius = 212;
 let cylinderWidth = 700;
 let textTexture;
 let indexWord = 0;
@@ -12,15 +12,16 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight,WEBGL);
 	
-  textTexture = createGraphics(2*PI*cylinderRadius,windowHeight*2);
+	var canvas = createCanvas(windowWidth, windowHeight,WEBGL);
+	canvas.parent('sketch-container');
+    textTexture = createGraphics(2*PI*cylinderRadius,windowHeight*2);
 	textTexture.colorMode(HSB);	
 	textTexture.background(255);
-  textTexture.fill(255);
+    textTexture.fill(255);
 	textTexture.textFont(font1);
-  textTexture.textAlign(CENTER);
-  textTexture.textSize(80);
+    textTexture.textAlign(CENTER);
+    textTexture.textSize(70);
 
 }
 

@@ -6,3 +6,17 @@ html, body {
 canvas {
   display: block;
 }
+
+
+#sketch-container {
+  position: relative;
+}
+
+#overlay {
+  position: absolute;
+  top:50vh;
+  right: 20vw;
+  z-index: 1;
+  background-color: transparent;
+  padding: 10px;
+}
