@@ -72,3 +72,9 @@ function changeWord() {
 	}
 	setTimeout(changeWord, 500)
 }
+
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+	background(0);
+  }
+  

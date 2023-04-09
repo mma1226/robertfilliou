@@ -13,7 +13,7 @@ canvas {
 }
 
 #overlay {
-  position: absolute;
+  position: fixed;
   top:50vh;
   right: 20vw;
   z-index: 1;
