@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'warblerBanner-Italic';
+  src: url('assets/WarblerBannerV1-Italic.otf') format('woff2'),
+      
+}
+
+@font-face {
+  font-family: 'DxSitrus-ExpandedItalic';
+  src: url('assets/DxSitrus-ExpandedItalic.otf') format('otf'),
+      
+}
+
+@font-face {
+  font-family: 'BastardoGroteskish';
+  src: url('assets/BastardoGroteskish_Bold.otf') format('woff2')
+      
+}
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -12,16 +31,97 @@ canvas {
   position: relative;
 }
 
+img {
+  width: 50%;
+  height: auto;
+}
+
 #overlay {
   position: fixed;
-  top:70vh;
-  right: 10vw;
-  z-index: 1;
+  top:80vh;
+  left: 80vw;
+  z-index: 2;
   background-color: transparent;
   padding: 10px;
 }
 
 #overlay:hover {
-
-  filter: hue-rotate(140deg);
+  transform: rotate(40deg);
+  transition: transform 2s ease-in-out;
 }
+
+
+
+#bgoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(1, 1, 1);
+    opacity: 0.25;
+    z-index: 1;
+  }
+  
+
+  #title1{
+
+    position: fixed;
+    top:10px;
+    left: 10px;
+    z-index: 2;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 70px;
+    font-family: BastardoGroteskish;
+   /* color:rgb(0, 255, 157); */
+   color: rgb(158, 179, 41);
+    font-weight: 0;
+    letter-spacing: -3px;
+    line-height: -90px;
+    
+  }
+#dear{
+  font-size: 70px;
+  font-weight: lighter;
+}
+
+#exhibition{
+  position:fixed;
+  font-size: 70px;
+  top: 85px;
+  font-style: normal;
+}
+  #multiplesneditions{
+    font-family: 'warblerBanner-Italic';
+    position:fixed; 
+    top:50px;
+    font-style:italic;
+    font-size: 120%;
+    color: rgb(255, 255, 255)
+  }
+    
+
+  #addy{ 
+    z-index: 3;
+    position:fixed;
+    color:aliceblue;
+    font-family:"helvetica";
+    letter-spacing: -9px;
+    line-height: 80%;
+    font-size: 110px;
+    bottom: 2vh;
+    left: 20px;
+    
+
+  }
+
+
+  #logo{
+    position:fixed;
+    right:5px;
+    width:15%;
+    bottom:5px;
+
+
+  }
