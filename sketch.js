@@ -1,6 +1,6 @@
 let font1;
 
-let cylinderRadius = 212;
+let cylinderRadius = 217;
 let cylinderWidth = 700;
 let textTexture;
 let indexWord = 0;
@@ -8,7 +8,7 @@ let words = ['ROBERT FILLIOU MULTIPLES & EDITIONS'];
 let cam;
 
 function preload() {
-  font1 = loadFont('assets/BastardoGroteskish_Bold.otf');
+  font1 = loadFont('assets/ITC Avant Garde Gothic Std Bold.otf');
 }
 
 
@@ -21,7 +21,7 @@ function setup() {
   textTexture.fill(255);
   textTexture.textFont(font1);
   textTexture.textAlign(CENTER);
-  textTexture.textSize(70);
+  textTexture.textSize(90);
   orbitControl();
   
   // set up camera
